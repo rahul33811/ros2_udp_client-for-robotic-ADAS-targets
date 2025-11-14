@@ -27,7 +27,8 @@ A ROS 2 package that sends `ActorCmd` messages over UDP to an external server.
 
 ## Run
 
-colcon build --packages-select ros2_udp_bridge
+ros2 run ros2_udp_client_for_robotic_adas_targets udp_clientnode
+
 source install/setup.bash
 
 ros2 run udp_client.py
