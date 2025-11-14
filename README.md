@@ -1,2 +1,19 @@
-# ros2_udp_client-for-robotic-ADAS-targets
-ros2_udp_bridge is a ROS 2 package that provides a lightweight UDP client node for transmitting control commands from ROS 2 topics to an external UDP server. It is designed for systems that require fast, low-overhead network communication such as robotics platforms, simulators, embedded controllers, or vehicle interfaces.
+# UDP Client ROS 2 Package
+
+A lightweight, open-source ROS 2 package that sends structured UDP messages based on incoming ROS 2 commands.  
+This package demonstrates how to bridge ROS 2 topics to raw UDP communication in a clean, extensible way.
+
+---
+
+## 🚀 Features
+
+- Subscribes to a ROS 2 topic (`cmd/input`)
+- Packs command values into a binary UDP message
+- Sends UDP packets to a configurable IP and port
+- Fully open-source safe (no proprietary message types)
+- Easy to extend for real robotic or networking applications
+
+---
+
+
+
