@@ -1,15 +1,18 @@
+<?xml version="1.0"?>
 <package format="3">
-  <name>udp_client</name>
-  <version>0.1.0</version>
-  <description>ROS2 UDP client node.</description>
+  <name>ros2_udp_client_for_robotic_adas_targets</name>
+  <version>0.0.1</version>
+  <description>UDP client node for robotic ADAS targets. Sends ActorCmd messages via UDP.</description>
 
-  <maintainer email="your_email@example.com">your_name</maintainer>
+  <maintainer email="you@example.com">Your Name</maintainer>
   <license>MIT</license>
 
-  <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>ament_python</buildtool_depend>
 
   <exec_depend>rclpy</exec_depend>
-  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>atg_interfaces</exec_depend>
 
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
 </package>
