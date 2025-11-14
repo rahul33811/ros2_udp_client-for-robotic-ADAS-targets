@@ -15,5 +15,20 @@ This package demonstrates how to bridge ROS 2 topics to raw UDP communication in
 
 ---
 
+# ros2_udp_bridge
 
+A ROS 2 package that sends `ActorCmd` messages over UDP to an external server.
+
+## Features
+- Listens to `act01/actor_cmd` topic.
+- Packs commands (`acc`, `kappa`) into a binary UDP payload.
+- Sends UDP packets to a configurable IP/port.
+- Designed for simulation, robotics, and control systems.
+
+## Run
+
+colcon build --packages-select ros2_udp_bridge
+source install/setup.bash
+
+ros2 run udp_client.py
 
